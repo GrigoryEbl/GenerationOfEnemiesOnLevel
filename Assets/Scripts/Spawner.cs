@@ -1,7 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnEnemy : MonoBehaviour
+public class Spawner : MonoBehaviour
 {
     [SerializeField] private List<Wave> _waves;
     [SerializeField] Transform _spawnPoint;
@@ -27,7 +28,7 @@ public class SpawnEnemy : MonoBehaviour
 
         if (_timeAfterLastSpawn >= _currentWave.Delay)
         {
-            InstantiateEnemy();
+            StartCoroutine(Spawn(_currentWave.Delay));
 
             _spawned++;
             _timeAfterLastSpawn = 0;
@@ -50,6 +51,15 @@ public class SpawnEnemy : MonoBehaviour
     {
         _currentWave = _waves[index];
     }
+
+    private IEnumerator Spawn(float timeBetweenSpawns)
+    {
+        WaitForSeconds waitOneSeconds = new WaitForSeconds(timeBetweenSpawns);
+
+        InstantiateEnemy();
+
+        yield return waitOneSeconds;
+    }
 }
 
 [System.Serializable]
@@ -60,5 +70,3 @@ public class Wave
     public float Delay;
     public int Count;
 }
-
-
