@@ -314,6 +314,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _waves.Array.data[0].Delay
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Template
       value: 
       objectReference: {fileID: 3998100116322525560, guid: 97de84e62f85fbd48a2928dd13669da6, type: 3}
