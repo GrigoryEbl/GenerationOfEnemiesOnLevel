@@ -66,7 +66,7 @@ public class Spawner : MonoBehaviour
 
 public class Wave
 {
-    public GameObject Template;
+    public Enemy Template;
     public float Delay;
     public int Count;
 }
