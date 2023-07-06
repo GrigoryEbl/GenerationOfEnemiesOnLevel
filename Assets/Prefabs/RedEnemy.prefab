@@ -108,6 +108,7 @@ GameObject:
   - component: {fileID: 6316310196716877132}
   - component: {fileID: 6316310196716877133}
   - component: {fileID: 6316310196716877134}
+  - component: {fileID: 4573873681352557815}
   m_Layer: 0
   m_Name: RedEnemy
   m_TagString: Untagged
@@ -160,6 +161,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4408054, y: 3.54608, z: 0.99764633}
   m_Center: {x: 1.7473936, y: 2.2067525, z: -6.6182375}
+--- !u!114 &4573873681352557815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6316310196716877135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e767c80cddcc82f4f84fdf665f5de121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6316310197114501364
 GameObject:
   m_ObjectHideFlags: 0
