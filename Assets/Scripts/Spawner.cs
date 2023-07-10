@@ -4,69 +4,37 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private List<Wave> _waves;
-    [SerializeField] Transform _spawnPoint;
+    [SerializeField] private Transform _spawnPoint;
+    [SerializeField] private Enemy _enemy;
+    [SerializeField] private float _delay;
+    [SerializeField] private int _count;
 
-    private Wave _currentWave;
-    private int _currentWaveNumber = 0;
-    private float _timeAfterLastSpawn;
     private int _spawned;
-
-    private void Start()
-    {
-        SetWave(_currentWaveNumber);
-    }
+    private float _passTime;
 
     private void Update()
     {
-        if (_currentWave == null)
-        {
-            return;
-        }
+        _passTime += Time.deltaTime;
 
-        _timeAfterLastSpawn += Time.deltaTime;
-
-        if (_timeAfterLastSpawn >= _currentWave.Delay)
-        {
-            StartCoroutine(Spawn(_currentWave.Delay));
-
-            _spawned++;
-            _timeAfterLastSpawn = 0;
-        }
-
-        if (_currentWave.Count <= _spawned)
-        {
-            _currentWave = null;
-        }
+        StartCoroutine(Spawn(_delay));
     }
 
     private void InstantiateEnemy()
     {
         Vector3 position = new Vector3(Random.Range(-_spawnPoint.position.x * 3, _spawnPoint.position.x * 3), 1, Random.Range(-_spawnPoint.position.z * 3, _spawnPoint.position.z * 3));
 
-        Instantiate(_currentWave.Template, position, Quaternion.identity);
-    }
-
-    private void SetWave(int index)
-    {
-        _currentWave = _waves[index];
+        Instantiate(_enemy, position, Quaternion.identity);
     }
 
     private IEnumerator Spawn(float timeBetweenSpawns)
     {
-        WaitForSeconds waitOneSeconds = new WaitForSeconds(timeBetweenSpawns);
+        if (_spawned < _count && _passTime >= _delay)
+        {
+            InstantiateEnemy();
+            _spawned++;
+            _passTime = 0;
+        }
 
-        InstantiateEnemy();
-
-        yield return waitOneSeconds;
+        yield return new WaitForSeconds(timeBetweenSpawns); ;
     }
-}
-
-[System.Serializable]
-
-public class Wave
-{
-    public Enemy Template;
-    public float Delay;
-    public int Count;
 }

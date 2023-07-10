@@ -314,6 +314,22 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 6894370662213849280, guid: 97de84e62f85fbd48a2928dd13669da6, type: 3}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _template
+      value: 
+      objectReference: {fileID: 6894370662213849280, guid: 97de84e62f85fbd48a2928dd13669da6, type: 3}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Delay
       value: 2
       objectReference: {fileID: 0}
@@ -475,6 +491,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _count
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _delay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _enemy
+      value: 
+      objectReference: {fileID: 4573873681352557815, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _template
+      value: 
+      objectReference: {fileID: 4573873681352557815, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _spawnPoint
       value: 
