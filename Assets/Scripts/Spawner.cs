@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -8,25 +7,37 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Enemy _enemy;
     [SerializeField] private float _delay;
     [SerializeField] private int _count;
+    [SerializeField] private int _spawnRadius;
+
 
     private int _spawned;
     private float _passTime;
+    private WaitForSeconds _sleepTime;
+
+    private void Start()
+    {
+        _sleepTime = new WaitForSeconds(_delay);
+    }
 
     private void Update()
     {
         _passTime += Time.deltaTime;
 
-        StartCoroutine(Spawn(_delay));
+        StartCoroutine(Spawn(_sleepTime));
     }
 
     private void InstantiateEnemy()
     {
-        Vector3 position = new Vector3(Random.Range(-_spawnPoint.position.x * 3, _spawnPoint.position.x * 3), 1, Random.Range(-_spawnPoint.position.z * 3, _spawnPoint.position.z * 3));
+        float heightByY = 1;
+
+        Vector3 position = new Vector3(Random.Range(-_spawnPoint.position.x - _spawnRadius, _spawnPoint.position.x + _spawnRadius),+
+                                        heightByY,+
+                                        Random.Range(-_spawnPoint.position.z - _spawnRadius, _spawnPoint.position.z + _spawnRadius));
 
         Instantiate(_enemy, position, Quaternion.identity);
     }
 
-    private IEnumerator Spawn(float timeBetweenSpawns)
+    private IEnumerator Spawn(WaitForSeconds timeBetweenSpawns)
     {
         if (_spawned < _count && _passTime >= _delay)
         {
@@ -35,6 +46,6 @@ public class Spawner : MonoBehaviour
             _passTime = 0;
         }
 
-        yield return new WaitForSeconds(timeBetweenSpawns); ;
+        yield return timeBetweenSpawns; 
     }
 }
