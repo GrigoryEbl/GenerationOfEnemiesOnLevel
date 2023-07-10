@@ -319,7 +319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _delay
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _enemy
@@ -329,6 +329,14 @@ PrefabInstance:
       propertyPath: _template
       value: 
       objectReference: {fileID: 6894370662213849280, guid: 97de84e62f85fbd48a2928dd13669da6, type: 3}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _radiusSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _spawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Delay
       value: 2
@@ -384,6 +392,10 @@ PrefabInstance:
     - target: {fileID: 5537403134695457222, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_Name
       value: Spawner (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5537403134695457222, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
@@ -497,7 +509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _delay
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _enemy
@@ -511,6 +523,14 @@ PrefabInstance:
       propertyPath: _spawnPoint
       value: 
       objectReference: {fileID: 8004274}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _radiusSpawn
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
+      propertyPath: _spawnRadius
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Delay
       value: 2
