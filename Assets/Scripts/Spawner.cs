@@ -7,8 +7,8 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Enemy _enemy;
     [SerializeField] private float _delay;
     [SerializeField] private int _count;
-    [SerializeField] private int _spawnRadius;
-
+    [SerializeField] private float _spawnRadius;
+    
 
     private int _spawned;
     private float _passTime;
@@ -28,11 +28,11 @@ public class Spawner : MonoBehaviour
 
     private void InstantiateEnemy()
     {
-        float heightByY = 1;
+        float heightByY = 0.1f;
 
-        Vector3 position = new Vector3(Random.Range(-_spawnPoint.position.x - _spawnRadius, _spawnPoint.position.x + _spawnRadius),+
+        Vector3 position = new Vector3(Random.Range(_spawnPoint.position.x, _spawnPoint.position.x + _spawnRadius),+
                                         heightByY,+
-                                        Random.Range(-_spawnPoint.position.z - _spawnRadius, _spawnPoint.position.z + _spawnRadius));
+                                        Random.Range(_spawnPoint.position.z, _spawnPoint.position.z + _spawnRadius));
 
         Instantiate(_enemy, position, Quaternion.identity);
     }

@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5107198157584492254, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
+      propertyPath: _path
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6316310196323558443, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -57,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6316310196716877135, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
       propertyPath: m_Name
-      value: VioletEnemy
+      value: VioletEnemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6316310197114501353, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
       propertyPath: m_Materials.Array.data[0]
