@@ -17,9 +17,13 @@ public class Enemy : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rigidbody.velocity = transform.forward * _speed;
-        _transform.LookAt(_target);
+        if (_target != null)
+        {
+            _rigidbody.velocity = _transform.forward * _speed;
+            _transform.LookAt(_target);
+        }
     }
+
     public void SetTarget(Transform target)
     {
         _target = target;

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 22.3
       objectReference: {fileID: 0}
+    - target: {fileID: 491085012144569917, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3631613655021594768, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2
@@ -166,6 +170,14 @@ PrefabInstance:
     - target: {fileID: 6191543158743269147, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_LocalPosition.z
       value: -5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867666961325921205, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257490213651085053, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7552649778394856837, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_Name
@@ -215,6 +227,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9028541947490991706, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
 --- !u!1001 &300116879
@@ -230,12 +246,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _delay
-      value: 0.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _enemy
       value: 
-      objectReference: {fileID: 3998100116322525560, guid: 07d93edd97e08e24f87bda505e35d04e, type: 3}
+      objectReference: {fileID: 6894370662213849280, guid: 07d93edd97e08e24f87bda505e35d04e, type: 3}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _target
       value: 
@@ -250,7 +266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _spawnRadius
-      value: 10
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Delay
@@ -306,7 +322,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457221, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_Color.rgba
-      value: 1711210679
+      value: 1711247360
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457222, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_Icon
@@ -638,6 +654,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -11.9
       objectReference: {fileID: 0}
+    - target: {fileID: 491085012144569917, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3631613655021594768, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.4
@@ -669,6 +689,14 @@ PrefabInstance:
     - target: {fileID: 6191543158743269147, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_LocalPosition.z
       value: 22.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867666961325921205, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257490213651085053, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7552649778394856837, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_Name
@@ -718,6 +746,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9028541947490991706, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
 --- !u!1001 &1317046223
@@ -738,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _enemy
       value: 
-      objectReference: {fileID: 3998100116322525560, guid: 97de84e62f85fbd48a2928dd13669da6, type: 3}
+      objectReference: {fileID: 6894370662213849280, guid: 97de84e62f85fbd48a2928dd13669da6, type: 3}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _target
       value: 
@@ -753,7 +785,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _spawnRadius
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Delay
@@ -1006,6 +1038,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -23.9
       objectReference: {fileID: 0}
+    - target: {fileID: 491085012144569917, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3631613655021594768, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.4
@@ -1029,6 +1065,14 @@ PrefabInstance:
     - target: {fileID: 6191543158743269147, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867666961325921205, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7257490213651085053, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7552649778394856837, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
       propertyPath: m_Name
@@ -1078,6 +1122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9028541947490991706, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7a78e91480658f4f9c0b909074dae55, type: 3}
 --- !u!1001 &5537403134698218347
@@ -1093,12 +1141,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _delay
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _enemy
       value: 
-      objectReference: {fileID: 6316310196716877135, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
+      objectReference: {fileID: 4573873681352557815, guid: ad1399b304bbd0f4bb841bf83f05d605, type: 3}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _target
       value: 
@@ -1117,7 +1165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _spawnRadius
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _waves.Array.data[0].Delay
