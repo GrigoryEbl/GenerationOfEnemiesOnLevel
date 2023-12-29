@@ -3,52 +3,48 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject _enemy;
+    [SerializeField] private Enemy _enemy;
     [SerializeField] private float _delay;
     [SerializeField] private int _count;
     [SerializeField] private float _spawnRadius;
     [SerializeField] Transform _target;
 
     private Transform _transform;
-    private int _spawned;
-    private float _passTime;
+    private int _spawnedCount;
     private WaitForSeconds _sleepTime;
-
-    public Transform Target => _target;
 
     private void Start()
     {
         _transform = transform;
         _sleepTime = new WaitForSeconds(_delay);
-    }
-
-    private void Update()
-    {
-        _passTime += Time.deltaTime;
-
-        StartCoroutine(Spawn(_sleepTime));
+        StartCoroutine(Spawn());
+       
     }
 
     private void InstantiateEnemy()
     {
         float heightByY = 0.1f;
 
-        Vector3 position = new Vector3(Random.Range(_transform.position.x, _transform.position.x + _spawnRadius),
+        Vector3 position = new Vector3(Random.Range(-_transform.position.x, _transform.position.x + _spawnRadius),
                                         heightByY,
-                                        Random.Range(_transform.position.z, _transform.position.z + _spawnRadius));
+                                        Random.Range(-_transform.position.z, _transform.position.z + _spawnRadius));
 
         Instantiate(_enemy, position, Quaternion.identity, _transform);
+
     }
 
-    private IEnumerator Spawn(WaitForSeconds timeBetweenSpawns)
+    private IEnumerator Spawn()
     {
-        if (_spawned < _count && _passTime >= _delay)
+        for (int i = 0; i < _count; i++)
         {
             InstantiateEnemy();
-            _spawned++;
-            _passTime = 0;
+            _spawnedCount++;
+            _enemy.SetTarget(_target);
+            yield return new WaitForSeconds(_delay) ;
         }
 
-        yield return timeBetweenSpawns;
+        yield return null;
     }
+
+    
 }
