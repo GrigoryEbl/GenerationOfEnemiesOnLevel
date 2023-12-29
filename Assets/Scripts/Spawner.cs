@@ -3,19 +3,22 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private Transform _spawnPoint;
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private GameObject _enemy;
     [SerializeField] private float _delay;
     [SerializeField] private int _count;
     [SerializeField] private float _spawnRadius;
-    
+    [SerializeField] Transform _target;
 
+    private Transform _transform;
     private int _spawned;
     private float _passTime;
     private WaitForSeconds _sleepTime;
 
+    public Transform Target => _target;
+
     private void Start()
     {
+        _transform = transform;
         _sleepTime = new WaitForSeconds(_delay);
     }
 
@@ -30,11 +33,11 @@ public class Spawner : MonoBehaviour
     {
         float heightByY = 0.1f;
 
-        Vector3 position = new Vector3(Random.Range(_spawnPoint.position.x, _spawnPoint.position.x + _spawnRadius),+
-                                        heightByY,+
-                                        Random.Range(_spawnPoint.position.z, _spawnPoint.position.z + _spawnRadius));
+        Vector3 position = new Vector3(Random.Range(_transform.position.x, _transform.position.x + _spawnRadius),
+                                        heightByY,
+                                        Random.Range(_transform.position.z, _transform.position.z + _spawnRadius));
 
-        Instantiate(_enemy, position, Quaternion.identity);
+        Instantiate(_enemy, position, Quaternion.identity, _transform);
     }
 
     private IEnumerator Spawn(WaitForSeconds timeBetweenSpawns)
@@ -46,6 +49,6 @@ public class Spawner : MonoBehaviour
             _passTime = 0;
         }
 
-        yield return timeBetweenSpawns; 
+        yield return timeBetweenSpawns;
     }
 }

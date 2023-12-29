@@ -1,13 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    //[SerializeField] Transform _target;
+    [SerializeField] private float _speed = 4f;
 
-    private void Update()
+    private Transform _transform;
+    private Spawner _spawner;
+    private Transform _target;
+    private Rigidbody _rigidbody;
+
+    private void Start()
     {
-        
+        _rigidbody = GetComponent<Rigidbody>();
+        _spawner = GetComponentInParent<Spawner>();
+        _transform = transform;
+        _target = _spawner.Target;
+    }
+
+    private void FixedUpdate()
+    {
+        _rigidbody.velocity = transform.forward * _speed;
+        _transform.LookAt(_target);
     }
 }

@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8613877829624171431}
   m_Layer: 0
-  m_Name: PathRed
+  m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

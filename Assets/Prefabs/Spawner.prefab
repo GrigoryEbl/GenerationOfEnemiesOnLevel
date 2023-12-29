@@ -57,9 +57,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22c41111f40f7b2438ddc9f0530ec217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waves:
-  - Template: {fileID: 982169469385761916, guid: 297f10e9171b8ea4e8329a47ae5213e6, type: 3}
-    Delay: 2
-    Count: 3
-  _distance: 4.16
   _spawnPoint: {fileID: 5537403134695457220}
+  _enemy: {fileID: 0}
+  _delay: 0
+  _count: 0
+  _spawnRadius: 0.5

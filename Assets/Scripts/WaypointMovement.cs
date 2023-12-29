@@ -1,22 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
-[RequireComponent(typeof(Rigidbody))]
 
 public class WaypointMovement : MonoBehaviour
 {
     [SerializeField] private Transform _path;
     [SerializeField] private float _speed;
 
-    private Rigidbody _rigidbody;
     private Transform[] _points;
     private int _currentPoint;
 
     private void Start()
     {
-        _rigidbody = GetComponent<Rigidbody>();
-
         _points = new Transform[_path.childCount];
 
         for (int i = 0; i < _path.childCount; i++)
