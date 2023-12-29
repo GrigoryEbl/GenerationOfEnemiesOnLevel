@@ -22,13 +22,11 @@ public class Spawner : MonoBehaviour
 
     private void InstantiateEnemy()
     {
-        float heightByY = 0.1f;
-
         Vector3 position = new Vector3(Random.Range(_transform.localPosition.x - _spawnRadius, _transform.localPosition.x + _spawnRadius),
-                                        heightByY,
+                                        _transform.localPosition.y,
                                         Random.Range(_transform.localPosition.z - _spawnRadius, _transform.localPosition.z + _spawnRadius));
 
-        Instantiate(_enemy, position, Quaternion.identity, _transform);
+        Instantiate(_enemy, position, Quaternion.identity, _transform).SetTarget(_target.transform);
     }
 
     private IEnumerator Spawn(WaitForSeconds timeBetweenSpawns)
@@ -36,9 +34,8 @@ public class Spawner : MonoBehaviour
         for (int i = 0; i < _count; i++)
         {
             InstantiateEnemy();
-            _enemy.SetTarget(_target.transform);
+            
             yield return timeBetweenSpawns;
-           
         }
     }
 }

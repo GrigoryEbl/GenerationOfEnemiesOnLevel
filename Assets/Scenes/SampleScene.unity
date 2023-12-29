@@ -255,7 +255,7 @@ PrefabInstance:
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _target
       value: 
-      objectReference: {fileID: 859068706}
+      objectReference: {fileID: 859068707}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _template
       value: 
@@ -286,7 +286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457220, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457220, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -354,6 +354,7 @@ GameObject:
   - component: {fileID: 567216021}
   - component: {fileID: 567216020}
   - component: {fileID: 567216018}
+  - component: {fileID: 567216022}
   m_Layer: 0
   m_Name: TargertYellow
   m_TagString: Untagged
@@ -402,6 +403,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &567216022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567216017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4de00e7775e5045810a5216bee1ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,6 +520,7 @@ GameObject:
   - component: {fileID: 859068706}
   - component: {fileID: 859068705}
   - component: {fileID: 859068704}
+  - component: {fileID: 859068707}
   m_Layer: 0
   m_Name: TargertRed
   m_TagString: Untagged
@@ -555,6 +569,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859068707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859068703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4de00e7775e5045810a5216bee1ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +800,7 @@ PrefabInstance:
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _target
       value: 
-      objectReference: {fileID: 2138407437}
+      objectReference: {fileID: 2138407439}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _template
       value: 
@@ -805,7 +831,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457220, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457220, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_LocalPosition.z
@@ -975,6 +1001,7 @@ GameObject:
   - component: {fileID: 2138407437}
   - component: {fileID: 2138407436}
   - component: {fileID: 2138407438}
+  - component: {fileID: 2138407439}
   m_Layer: 0
   m_Name: TargertGreen
   m_TagString: Untagged
@@ -1023,6 +1050,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _path: {fileID: 303355553}
   _speed: 5
+--- !u!114 &2138407439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138407435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4de00e7775e5045810a5216bee1ab2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &498351392387851929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1150,7 +1189,7 @@ PrefabInstance:
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _target
       value: 
-      objectReference: {fileID: 567216021}
+      objectReference: {fileID: 567216022}
     - target: {fileID: 8004272, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: _template
       value: 
@@ -1185,7 +1224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457220, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: 5537403134695457220, guid: fc663534aab53a145ba6b2568a3f3ebf, type: 3}
       propertyPath: m_LocalPosition.z
